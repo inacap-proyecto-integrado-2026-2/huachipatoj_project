@@ -1,0 +1,1 @@
+{% extends 'seguimiento/base.html' %}{% block content %}<h1>Mi rendimiento</h1><p>{{ player.nombre_completo|default:'Cuenta sin jugador asociado' }}</p><p>{{ player.observaciones|default:'' }}</p>{% include 'seguimiento/evaluations_list.html' %}<h2>Mis rutinas</h2>{% include 'seguimiento/routines_list.html' %}{% endblock %}
